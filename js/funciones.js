@@ -28,6 +28,7 @@ function createMatrix(boardType, matrixType, func, type){
         matrixType.push(list)
     }
 }
+
 //Función para seleccionar barco
 function selectShip(event){
     shipData = event.target.className.split(" ");
@@ -36,6 +37,7 @@ function selectShip(event){
     ship.quantity = quantityShip[shipData[1]];
     ship.id = shipData[1];
 }
+
 //Creación de tablero jugador
 createMatrix(board, matrix, selectPosition, "player");
 //Creación de barcos
@@ -113,6 +115,7 @@ function checkPosition(pos, axis, size){
         }
     }
 }
+
 //Función para crear barco random
 function random(i){
     shipRandom.position = positionArray[Math.floor(Math.random() * Math.floor(positionArray.length))];
@@ -142,6 +145,7 @@ function random(i){
         return random(i)
     }
 }
+
 //Verificar tiro de jugador
 function checkShot(event){
     let grid = event.target
@@ -161,6 +165,7 @@ function checkShot(event){
         shotPc()
     }
 }
+
 //Jugada del PC
 function shotPc(){
     let x = Math.floor(Math.random() * Math.floor(10));
@@ -181,6 +186,7 @@ function shotPc(){
         document.getElementById(x + "," + y + "," + "player").className += " miss";
     }
 }
+
 //Revisar ganador
 function checkWinner(matrix, player){
     for(let i=0; i<10; i++){

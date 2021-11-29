@@ -6,11 +6,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/estilo.css" type="text/css" />
     <!-- <link rel="stylesheet" href="./css/a.css" type="text/css" /> -->
-    <title>Proyecto de Batalla Naval</title>
+    <title>Examen</title>
 </head>
 
 <body>
-
     <div class="container-fluid">
         <div class="row bg1">
             <div class="col-md">
@@ -30,6 +29,7 @@
                 </div>
                 <div class="col">
                     <div id="boardAttack">
+
                     </div>
                 </div>
             </div>
